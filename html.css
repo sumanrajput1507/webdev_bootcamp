@@ -122,6 +122,33 @@ header nav ul li:hover a {
   display: flex;
   align-items: center;
 }
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: #4f12d0;
+    clip-path: circle(80% at 0 0);
+    transition: 3s all ease-in-out;
+    color: white;
+}
+.box:hover{
+    clip-path: circle(100%);
+}
+.box :is(h1,h2){
+    color: red;
+}
+
+.box2{
+    width: 300px;
+    height: 300px;
+    border: 5px solid #4f12d0;
+    perspective: 300px;
+}
+.shape{
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+    transform:rotatex(45deg) ;
+}
 
 @media screen and (max-width: 1024px) {
   .hero_section {
