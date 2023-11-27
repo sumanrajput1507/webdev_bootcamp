@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main_bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://dlvkyia8i4zmz.cloudfront.net/nDiXktcRvW7Bg4YrkwvB_Rectangle_2__1_.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form_container{
+    width: 411px;
+    height: 445px;
+    margin: 0 auto;
+}
