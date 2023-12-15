@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
 *,
 *::after,
 *::before {
@@ -5,16 +6,96 @@
   padding: 0;
   box-sizing: border-box;
 }
-.main_bg{
-    width: 100%;
-    height: 100vh;
-    background-image: url('https://dlvkyia8i4zmz.cloudfront.net/nDiXktcRvW7Bg4YrkwvB_Rectangle_2__1_.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+body {
+  font-family: "Montserrat", sans-serif;
 }
-.form_container{
-    width: 411px;
-    height: 445px;
-    margin: 0 auto;
+.login {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://dlvkyia8i4zmz.cloudfront.net/nDiXktcRvW7Bg4YrkwvB_Rectangle_2__1_.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  background-color:rgba(0, 0, 0, 0.50);
+}
+.login_container {
+  width: 411px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.logo {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.auth_form {
+  height: max-content;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.auth_form h1 {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; 
+  margin-block-end:30px;
+}
+form{
+  width: 100%;
+}
+.input_section {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  margin-block: 15px;
+  padding-block: 12px;
+}
+.input_section input {
+  border-style: none;
+  color: #8F90A6;
+}
+.input_section input:focus {
+  border-style: none;
+}
+input[type=email]:focus,input[type=password]:focus {
+  outline: none;
+}
+textarea:focus, input:focus {
+  color:#00000020;
+}
+.login_container button{
+  width: 100%;
+  height: 50px;
+border-radius: 14px;
+border: 2px solid #1DAEFF;
+background: #1DAEFF;
+}
+.login_container button a{
+  color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px; 
+letter-spacing: 3.2px;
+text-transform: uppercase;
+}
+.signup {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 0px 30px;
+  font-size: 14px;
+  color: #1DAEFF;
+  gap: 20px;
+}
+.signup p a{
+  color: #1DAEFF;
 }
